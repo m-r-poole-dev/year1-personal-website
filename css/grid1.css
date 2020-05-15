@@ -1,0 +1,62 @@
+.wrapper {
+	display: grid;
+	grid-gap: 2px;	
+    grid-template-areas:
+		"banner"
+		"menu"
+		"nav"
+		"main"
+        "im"
+		"aside"
+		"footer";
+}
+
+/* Two column grid for viewport width of minimum of 50em i.e. Tablets etc,---------------------*/
+
+@media (min-width: 50rem) {
+  .wrapper {
+    grid-template-columns: 3fr 6r;
+    grid-template-areas: 
+      "banner  banner"
+      "menu  menu"
+	  "nav  main"
+      "aside  main"
+      "footer  footer";
+  }
+}
+
+/* Three Colomn grid for devices with viewport width of minimum i.e. Desktop Monitors and Laptops--------------*/
+
+@media (min-width: 50rem) {
+  .wrapper {
+    grid-gap: 3px;
+    grid-template-columns: 2.5fr 6fr 1.5fr;
+    grid-template-areas: 
+      "banner  banner  banner"
+      "menu  menu  menu"
+	  "nav  main  btn" 
+      "nav  main  btn"
+      "footer  footer  footer";
+      
+     
+   }
+}
+banner{
+    grid-area: banner;
+}
+menu{
+    grid-area: menu;
+}
+
+main{
+    grid-area: main;
+}
+nav{
+    grid-area: nav;
+}
+.btn-icon{
+    grid-area: btn;
+}
+footer{
+    grid-area: footer;
+}

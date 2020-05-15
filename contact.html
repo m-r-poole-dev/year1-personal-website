@@ -1,0 +1,68 @@
+
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	
+    <head>
+        <title>mrpContact</title>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+		<link href="css/normailize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/grid1.css" rel="stylesheet">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700" rel="stylesheet">
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<!--The 'wrapper' contains all the page content-->
+	
+    <header class = "banner"><!--The main heading for the page -->
+		<h1>Contact Me</h1>
+		<h2>Michael Poole</h2>
+	</header>
+	
+    <nav class="menu"><!--The primary navigation for the page -->
+	<ul>
+		<li><a href="index.html" class="other">Learning Journal</a></li>
+		<li><a href="tutorial.html" class ="other">Tutorial</a></li>
+        <li><a href="" class ="current">Contact me</a></li>
+	</ul>
+	</nav>
+    <main>
+            <form id="form1">
+            <fieldset>
+            
+            <legend class= "cd">Contact details</legend>
+            <label for="name">Name <em>(required)</em></label>
+            <input type="text" id="name" required placeholder="Forename+Surname"/>
+            <label for="email">Email address <em>(required)</em></label>
+            <input type="text"  id="email" required />
+            <label for="url">Website address</label>
+            <input type="text" id="url" value="http://" />          
+                        
+            <label for="message">Your Comments: </label>
+            <textarea id="message" required></textarea>                 
+            
+            <label>Can we contact you?</label>
+            <label for="information-yes">
+            <input type="radio" id="information-yes" name="information" value="yes" />Yes please</label>
+            <label for="information-no">
+            <input type="radio" id="information-no" name="information" value="no" checked />No thanks</label>
+            <input type="submit" value="Click to send" class="submit-btn"/>
+                
+            </fieldset>
+                
+        </form>                   
+        
+    </main>
+  
+	<footer><!--Footer content -->
+		<a class="email" href="malito:m.poole2@uni.brighton.ac.uk">Email Michael Poole</a>
+        <small>&copy; 2018, Michael Poole.</small>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
